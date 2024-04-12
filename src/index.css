@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#gradient-div {
+    background: rgb(9, 7, 43);
+    background: linear-gradient(114.7deg, #233C68 12.5%, #0057FF 52.08%, #CAF4F7 100%);
+}
+
+body{
+    font-family: Inter;
+}
+
+#heading-1 {
+    font-family: Inter;
+}
+
+.blur-border {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); /* Set a semi-transparent background color */
+}
+
+.blur-border::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background: inherit;
+    filter: blur(50px);
+    z-index: -1;
+}
